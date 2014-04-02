@@ -4,6 +4,9 @@ public class Nodo {
 
     public int frecuencia;
     public char c;
+    public String normal;
+
+    
     public Nodo izquierda;
     public Nodo derecha;
 
@@ -62,6 +65,13 @@ public class Nodo {
 
     public void setDerecha(Nodo derecha) {
         this.derecha = derecha;
+    }
+    public String getNormal() {
+        return normal;
+    }
+
+    public void setNormal(String normal) {
+        this.normal = normal;
     }
 
 }

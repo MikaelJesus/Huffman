@@ -18,6 +18,21 @@ public class Arbol extends Nodo {
         raiz.izquierda = null;
         raiz.derecha = null;
     }
+    public void insertarIzquierda(Nodo izquierda,String valor) {
+        this.raiz.normal=valor;
+        this.raiz.izquierda = izquierda;
+    }
+    
+    public void insertarDerecha(Nodo derecha,String valor) {
+        this.raiz.normal=valor;
+        this.raiz.derecha = derecha;
+    }
+    public void insertarNodo(Nodo node,String valor) {
+        this.raiz.frecuencia = node.frecuencia;
+        this.raiz.normal = valor;
+        this.raiz.izquierda = null;
+        this.raiz.derecha = null;
+    }
 
     public void insertarNodo(int frecuancia, char c, Nodo izquierda, Nodo derecha) {
         raiz.frecuencia = frecuancia;

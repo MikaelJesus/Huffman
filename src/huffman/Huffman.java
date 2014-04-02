@@ -10,7 +10,7 @@ public class Huffman {
     private Arbol Arbol;
     private int longitudDelNodo = 0;
     private Conversor conversor;
-
+    private Descomprime descomprime;
     public Huffman(String valor) {
         frecuenciaDeLaTabla(valor);
         organizar();
